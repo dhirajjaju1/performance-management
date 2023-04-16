@@ -1,0 +1,23 @@
+type User {
+	id : ID!
+    institution : String
+    employeeId : String!
+    userName : String!
+    email : String!
+    password : String
+    managersId : String!
+    roles: [String]
+}
+
+# Root
+extend type Query {
+	findByEmployeeId(id: String!): User
+	findByUserName(userName: String!): User
+	findByEmployeeIdOrUserName (id: String, userName: String): [User]
+	findByManagersId(id: String!): [User]
+}
+
+# Root
+extend type Mutation {
+	deleteUserByEmployeeId(employeeId: String!): Boolean
+}

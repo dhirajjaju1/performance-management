@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      #uri: mongodb+srv://sawariyauser:as5IUotRNxvM1NKA@cluster0.5fqpkok.mongodb.net/sawariyastore
+      #database: sawariyastore
+      uri: mongodb+srv://perfmngmt:WrMd7XLl2Qm1wqT3@cluster0.5fqpkok.mongodb.net/perfmngmt_db
+      database: perfmngmt_db
+
+logging:
+  level:
+    '[root]' : info
+    '[org.springframework.data.mongodb.core.MongoTemplate]' : debug
+    '[org.springframework.security]' : trace
+    '[org.springframework.security.oauth]' : debug
+    '[org.springframework.web.client.RestTemplate]' : debug
+    '[com.performance.management]' : debug

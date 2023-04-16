@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: performance-management
+server:
+  port: 5000

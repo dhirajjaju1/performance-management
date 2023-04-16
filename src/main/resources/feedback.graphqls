@@ -1,0 +1,32 @@
+type Feedback {
+	id : ID!
+    feedbackRequestorId : String!
+    feedbackRequestor: User
+    feedbackRequestorManagersId : String
+    feedbackRequestorManager: User
+    feedbackReceiversId : String!
+    feedbackReceiverUser: User
+    feedbackAcceptedStatus : String
+    strengths : String
+    improvements : String   
+}
+
+# Type definition
+type User {
+	employeeId : String
+  	userName: String
+  	email : String
+}
+
+# Root
+type Query {
+	findByFeedbackRequestorId(feedbackRequestorId: String!): [Feedback]!
+	getFeedbackByStatus(feedbackRequestorId: String!, feedbackAcceptedStatus: String!): [Feedback]!
+	getOpenFeedbackRequest(feedbackReceiversId: String!, feedbackAcceptedStatus: String!): [Feedback]!
+}
+
+# Root
+type Mutation {
+	createFeedback(feedbackRequestorId: String!, feedbackReceiversId: String!): Feedback!
+	updateFeedback(id: ID!, feedbackAcceptedStatus: String!, strengths: String!, improvements: String!): Feedback!
+}
