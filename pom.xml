@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sawariyastore</groupId>
-	<artifactId>inventory-management</artifactId>
+	<artifactId>peformance-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory-management</name>
-	<description>Inventory Management</description>
+	<name>peformance-management</name>
+	<description>Performance Management</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
