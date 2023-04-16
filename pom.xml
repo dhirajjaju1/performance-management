@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sawariyastore</groupId>
-	<artifactId>peformance-management</artifactId>
+	<artifactId>performance-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>peformance-management</name>
 	<description>Performance Management</description>
