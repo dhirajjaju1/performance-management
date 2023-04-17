@@ -8,10 +8,10 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.sawariyastore</groupId>
+	<groupId>com.performance.management</groupId>
 	<artifactId>performance-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>peformance-management</name>
+	<name>performance-management</name>
 	<description>Performance Management</description>
 	<properties>
 		<java.version>1.8</java.version>
